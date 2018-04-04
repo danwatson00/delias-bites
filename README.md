@@ -1,1 +1,1 @@
-# delias-bites
+# BaseInstall, a boilerplate for web projects
