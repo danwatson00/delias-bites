@@ -82,6 +82,7 @@ h2 {
     align-self: center;
     justify-self: center;
     width: 20px;
+    margin-top: 15px;
 }
 
 //home banner image
@@ -227,13 +228,14 @@ h2 {
 
 
 //Footer
-footer {
+#footer {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background: $colorF;
     margin: 50px;
-    grid-row: 6;
 }
 
+#
 #foot-shop {
     grid-column: 1;
 }
