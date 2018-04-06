@@ -1,5 +1,7 @@
+//
+
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito|PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300|PT+Serif');
 
 //colors
 $colorA: #191919;
@@ -7,16 +9,248 @@ $colorB: #d29fbb;
 $colorC: #d2d5ea;
 $colorD: #f3f3f3;
 $colorE: #bddce3;
+$colorF: #f8e2ef;
 
 
 
 //fonts
-$fontA: 'Nunito, sans-serif';
+$fontA: 'Nunito';
 $fontB: 'PT Serif', serif;
 
 
+//global
+
+a {
+    text-decoration: none;
+    color: $colorA;
+}
+
+a:visited {
+    color: $colorB;
+}
+
+h2 {
+    font-family: $fontB;
+}
+
+//main container
+#home-body {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    min-height: 100vh;
+}
 
 
+//nav bar
+#header-nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 80px;
+    grid-row: 1;
+}
+
+#left-nav {
+    grid-column: 1;
+}
+
+#left-nav, #right-nav {
+    list-style-type: none;
+    font-family: $fontA;
+    font-size: .75em;
+    align-self: center;
+    justify-self: center;
+}
+
+#right-nav li, #left-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#header-logo {
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5em;
+}
+
+#right-nav {
+    grid-column: 3;
+}
+
+#cart-icon {
+    grid-column: 4;
+    align-self: center;
+    justify-self: center;
+    width: 20px;
+    margin-top: 15px;
+}
+
+//home banner image
+ #home-carousel {
+     margin: 50px;
+     grid-row: 2;
+ }
+
+.main-text {
+    position: absolute;
+    top: 50px;
+    color: #FFF;
+}
+
+#homemade {
+    text-align: left;
+}
+//Best Sellers
+#best-sellers {
+    grid-row: 3;
+}
+
+.section-h2 {
+    font-family: $fontA;
+    text-align: center;
+    font-size: 2em;
+}
+
+#paragraph {
+    text-align: center;
+    font-family: $fontB;
+    font-size: .8em;
+}
+
+#bs-cards-div {
+    text-align: center;
+}
+
+.card-footer {
+    margin-top: 275px;
+    text-align: center;
+    font-family: $fontA;
+    font-size: .9em;
+    background-color: white;
+}
+
+
+.bs-card {
+    width: 275px;
+    height: 350px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#bs-card1 {
+    background: url("/images/parm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#bs-card1:hover {
+    background: url("/images/parm_780-qv.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bs-card2 {
+    background: url("/images/oatmeal_bites.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bs-card2:hover {
+    background: url("/images/oatmeal_bites-qv.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bs-card3 {
+    background: url("/images/jam_poppy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bs-card3:hover {
+    background: url("/images/jam_poppy-qv.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+//ALL COOKIES BTN
+#all-cookies-btn {
+    font-family: $fontA;
+    border-radius: 0;
+    background-color: white;
+    font-size: .8em;
+    grid-row: 4;
+    border-top: 1px solid black;
+}
+
+
+//Follow me div
+#follow-me-div {
+    background: $colorD no-repeat;
+    // background-color: $colorD;
+    // background-size: 
+    padding-top: 75px;
+    margin: 50px;
+    text-align: center;
+    grid-row: 5;
+}
+
+.follow-img {
+    width: 275px;
+    height: 275px;
+    display: inline-block;
+}
+
+#follow-img-1 {
+  background: url(/images/bowls.jpg) 50% 50% no-repeat;
+}
+
+#follow-img-2 {
+  background: url("/images/spoon.jpg") 50% 50% no-repeat;
+}
+
+#follow-img-3 {
+  background: url("/images/oranges.jpg") 50% 50% no-repeat;
+}
+
+#follow-img-4 {
+  background: url("/images/choc_cookies.jpg") 50% 50% no-repeat;
+}
+
+#follow-img-5 {
+  background: url("/images/ingredients.jpg") 50% 50% no-repeat;
+}
+
+#follow-img-6 {
+  background: url("/images/crackers.jpg") 50% 50% no-repeat;
+}
+
+
+//Footer
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: $colorF;
+    margin: 50px;
+}
+
+#
+#foot-shop {
+    grid-column: 1;
+}
+
+#foot-hours {
+    grid-column: 2;
+}
+
+#foot-add {
+    grid-column: 3;
+}
+
+#foot-social {
+    grid-column: 4;
+}
 
 
 
